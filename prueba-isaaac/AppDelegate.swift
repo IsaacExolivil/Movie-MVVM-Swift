@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
-//  prueba-isaaac
 //
-//  Created by Isaac on 21/02/22.
+//  Created by Jose Isaac Chin López 20 de febrero
+//  Copyright © 2022 All rights reserved.
+//
 //
 
 import UIKit

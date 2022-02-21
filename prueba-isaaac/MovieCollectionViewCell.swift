@@ -1,9 +1,8 @@
 //
-//  MovieCollectionViewCell.swift
-//  mvvm-movies
 //
-//  Created by Rodrigo Giglio on 15/08/19.
-//  Copyright © 2019 Guilherme Piccoli. All rights reserved.
+//  Created by Jose Isaac Chin López 20 de febrero
+//  Copyright © 2022 All rights reserved.
+//
 //
 
 import UIKit

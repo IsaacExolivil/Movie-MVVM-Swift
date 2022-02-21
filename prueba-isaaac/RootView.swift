@@ -1,8 +1,8 @@
 //
-//  RootView.swift
 //
-//  Created by Fernando Locatelli Maioli on 17/04/19.
-//  Copyright © 2019 Fernando Locatelli Maioli. All rights reserved.
+//  Created by Jose Isaac Chin López 20 de febrero
+//  Copyright © 2022 All rights reserved.
+//
 //
 
 import UIKit

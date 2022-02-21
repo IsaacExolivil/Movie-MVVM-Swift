@@ -1,9 +1,6 @@
 //
-//  SeeAllNowPlayingView.swift
-//  mvvm-movies
-//
-//  Created by Guilherme Piccoli on 20/08/19.
-//  Copyright © 2019 Guilherme Piccoli. All rights reserved.
+//  Created by Jose Isaac Chin López 20 de febrero
+//  Copyright © 2022 All rights reserved.
 //
 
 import UIKit
