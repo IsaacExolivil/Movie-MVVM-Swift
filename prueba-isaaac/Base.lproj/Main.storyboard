@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IE0-4Y-uLV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jfk-xP-WSK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,22 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="prueba_isaaac" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-23" y="68"/>
-        </scene>
-        <!--Movie Details-->
+        <!--Peliculas Detalles-->
         <scene sceneID="vEE-XU-4oz">
             <objects>
                 <viewController id="LdV-96-jBY" customClass="DetailView" customModule="mvvm_movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +45,7 @@
                                                     <constraint firstAttribute="height" constant="13" id="CaA-n7-lne"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-bV-pm9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-bV-pm9">
                                                 <rect key="frame" x="181" y="181" width="213" height="13"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="13" id="Syp-LH-oNz"/>
@@ -143,7 +128,7 @@
                             <constraint firstItem="umH-dn-o5s" firstAttribute="bottom" secondItem="n7t-3b-etU" secondAttribute="bottom" id="yxw-3X-rfn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie Details" largeTitleDisplayMode="never" id="nno-bz-Ar2"/>
+                    <navigationItem key="navigationItem" title="Peliculas Detalles" largeTitleDisplayMode="never" id="nno-bz-Ar2"/>
                     <connections>
                         <outlet property="activityIndicator" destination="lZE-9d-WOa" id="azR-wP-9t1"/>
                         <outlet property="cover" destination="d6P-Mx-I5t" id="rro-o2-kkZ"/>
@@ -157,12 +142,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrH-YJ-ybY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.6376811594203" y="83.705357142857139"/>
+            <point key="canvasLocation" x="42" y="834"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9EN-s4-Bkb">
             <objects>
                 <navigationController id="IE0-4Y-uLV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yqA-lW-w9O"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bvY-AR-Kyo">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="-1393" y="84"/>
         </scene>
-        <!--Movie DB-->
+        <!--Peliculas-->
         <scene sceneID="RJe-Gv-lIO">
             <objects>
                 <viewController id="jEs-op-xbM" customClass="RootView" customModule="mvvm_movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -379,7 +365,7 @@
                             <constraint firstItem="a45-63-NeW" firstAttribute="leading" secondItem="SsW-Jt-4lD" secondAttribute="leading" id="vvA-ln-o3V"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie DB" id="7BB-dX-oMP"/>
+                    <navigationItem key="navigationItem" title="Peliculas" id="7BB-dX-oMP"/>
                     <connections>
                         <outlet property="activityIndicator" destination="U9v-Kr-915" id="A0Y-aT-Agp"/>
                         <outlet property="tableView" destination="a45-63-NeW" id="2Za-2b-gNW"/>
@@ -391,7 +377,7 @@
             </objects>
             <point key="canvasLocation" x="-665.21739130434787" y="83.705357142857139"/>
         </scene>
-        <!--Now Playing-->
+        <!--Peliculas Recientes-->
         <scene sceneID="Ljr-JS-0DW">
             <objects>
                 <viewController id="R92-8P-QG4" customClass="MovieListView" customModule="mvvm_movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -483,7 +469,7 @@
                             <constraint firstItem="ZKM-3u-zzU" firstAttribute="top" secondItem="7ke-Jz-xBf" secondAttribute="top" constant="20" id="fOu-ox-A81"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Now Playing" largeTitleDisplayMode="never" id="Phr-Jq-HGx"/>
+                    <navigationItem key="navigationItem" title="Peliculas Recientes" largeTitleDisplayMode="never" id="Phr-Jq-HGx"/>
                     <connections>
                         <outlet property="collectionView" destination="oEK-cm-OHt" id="Aw7-0W-osc"/>
                         <outlet property="resultsCountLabel" destination="ZKM-3u-zzU" id="r8S-bK-NP2"/>
@@ -493,6 +479,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb1-MT-tDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-919" y="814"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="15G-gP-ItQ">
+            <objects>
+                <viewController id="jfk-xP-WSK" customClass="ViewController" customModule="BookProyect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGC-q9-8BS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpF-U8-ufo" customClass="loginButton">
+                                <rect key="frame" x="174" y="690" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="IE0-4Y-uLV" kind="presentation" identifier="goMovie" animates="NO" modalPresentationStyle="fullScreen" id="rz5-8K-xR7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oQg-uf-49S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWt-B8-MBW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1394.2028985507247" y="-599.33035714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

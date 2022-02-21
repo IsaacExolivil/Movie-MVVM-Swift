@@ -21,22 +21,11 @@ class RootView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let searchBar = UISearchBar()
         searchBar.sizeToFit()
         
-        activityIndicator.startAnimating()
-        tableView.isHidden = true
+        activityIndicator?.startAnimating()
+        tableView?.isHidden = true
         
-// TO-DO: Implement search results
-//        searchController.delegate = self
-//        searchController.searchResultsUpdater = searchController.searchResultsController as? MovieContainerView
-//        searchController.dimsBackgroundDuringPresentation = true
-//        searchController.obscuresBackgroundDuringPresentation = false
-//        definesPresentationContext = true
-//
-//        searchController.loadViewIfNeeded()
-//
-//        searchController.searchBar.delegate = searchController.searchResultsController as? MovieContainerView
-//        searchController.hidesNavigationBarDuringPresentation = false
-//        searchController.searchBar.sizeToFit()
-        searchController.searchBar.placeholder = "Search Movie"
+
+        searchController.searchBar.placeholder = "Buscar Pelicula"
 
         
         navigationItem.searchController = searchController
@@ -45,8 +34,8 @@ class RootView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         viewModel = RootViewModel()
         viewModel?.downloadDelegate = self
         
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView?.dataSource = self
+        tableView?.delegate = self
         tableView.backgroundColor = .white
         
     }
@@ -114,10 +103,10 @@ class RootView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         view.addSubview(label)
         
         if section == 0 {
-            label.text = "Now Playing"
+            label.text = "Peliculas Recientes"
             
             let button = UIButton(frame: CGRect(x: view.frame.size.width - 80 - 10, y: 20, width: 80, height: 50))
-            button.setTitle("See All", for: .normal)
+            button.setTitle("Ver todas", for: .normal)
             button.setTitleColor(.black, for: .normal)
             view.addSubview(button)
             
@@ -125,7 +114,7 @@ class RootView: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
         }
         else if section == 1 {
-            label.text = "Popular Movies"
+            label.text = "Popular Peliculas"
 
         }
         

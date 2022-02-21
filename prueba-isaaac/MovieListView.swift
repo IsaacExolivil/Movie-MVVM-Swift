@@ -80,7 +80,7 @@ extension MovieListView: DownloadDelegate {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
             guard let viewModel = self.viewModel else {return}
-            self.resultsCountLabel.text = "Showing \(viewModel.getMoviesCount()) results"
+            self.resultsCountLabel.text = "Mostrando \(viewModel.getMoviesCount()) resultados"
         }
     }
 }

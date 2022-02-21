@@ -9,7 +9,7 @@ import Foundation
 
 struct DataAccess {
     
-    static let apiKey: String = "edac55baa5247ecf4089bac4553ff6ed"
+    static let apiKey: String = "9590302df214f291ca73414d6367398b"
 
     static func getPopularMovies(fromPage page: Int = 1, completionHandler completion: @escaping (ListMovie?) -> Void) {
         var request = URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&language=en-US&page=\(page)")!)
