@@ -1,8 +1,9 @@
 //
 //  AppDelegate.swift
-//  prueba-isaaac
+//  mvvm-movies
 //
-//  Created by Isaac on 21/02/22.
+//  Created by Guilherme Piccoli on 14/08/19.
+//  Copyright © 2019 Guilherme Piccoli. All rights reserved.
 //
 
 import UIKit
